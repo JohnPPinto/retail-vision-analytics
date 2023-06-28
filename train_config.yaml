@@ -1,0 +1,8 @@
+# Path to the dataset
+path: '../datasets'
+train: 'images/train'
+val: 'images/val'
+
+# Classes details
+names:
+    0: person

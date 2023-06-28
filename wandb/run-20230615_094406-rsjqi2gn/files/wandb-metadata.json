@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.4.0-122-generic-x86_64-with-glibc2.31",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-06-15T09:44:07.719354",
+    "startedAt": "2023-06-15T09:44:06.257303",
+    "docker": null,
+    "gpu": "Quadro RTX 5000",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "notebooks/03_model_training.ipynb",
+    "root": "/notebooks",
+    "git": {
+        "remote": "https://github.com/gradient-ai/PyTorch.git",
+        "commit": "d0ecbf76aac3ae9a65bc12d8ef8dbbf7ff5ecef7"
+    },
+    "email": null,
+    "host": "n2rtvmpwda",
+    "username": "root",
+    "executable": "/usr/local/bin/python3"
+}

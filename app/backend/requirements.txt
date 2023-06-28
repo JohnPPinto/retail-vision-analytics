@@ -1,0 +1,11 @@
+scikit-learn==0.22.1
+numpy==1.22.3
+tensorflow==2.10.0
+matplotlib==3.7.1
+opencv-python==4.7.0.72
+onnxruntime-gpu==1.14.1
+tqdm==4.65.0
+fastapi==0.97.0
+uvicorn==0.22.0
+python-multipart==0.0.6
+ffmpeg-python==0.2.0
