@@ -94,8 +94,18 @@ class PredictTrack:
         video_reader = cv2.VideoCapture(self.src)
         self.vid_wd = int(video_reader.get(cv2.CAP_PROP_FRAME_WIDTH))
         self.vid_ht = int(video_reader.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        total_frames = int(video_reader.get(cv2.CAP_PROP_FRAME_COUNT))
         fps = video_reader.get(cv2.CAP_PROP_FPS)
+
+        # Reading total frames
+        total_frames = 0
+        while True:
+            grab, _ = video_reader.read()
+            if not grab:
+                break
+            total_frames += 1
+        
+        # Re initiating the video instance
+        video_reader = cv2.VideoCapture(self.src)
 
         # Creating a instance for writing a video file
         fourcc = cv2.VideoWriter_fourcc(*'vp09') # vp80 Codec - WebM
@@ -156,7 +166,7 @@ class PredictTrack:
                 color = colors[int(class_id)]
 
                 # A caption for every object
-                caption = f'{self.classes[int(class_id)]}: #{track_id}'
+                caption = f'#{track_id}'
 
                 # Drawing box and label for every object
                 frame = draw_box_label(image=frame,
@@ -273,7 +283,7 @@ class PredictTrack:
                 color = colors[int(class_id)]
 
                 # A caption for every object
-                caption = f'{self.classes[int(class_id)]}: #{track_id}'
+                caption = f'#{track_id}'
 
                 # Drawing box and label for every object
                 frame = draw_box_label(image=frame,
@@ -326,4 +336,4 @@ if __name__ == '__main__':
     # Running inference and saving the result
     time_result = PredictTrack(src=src,
                                dst=dst,
-                               model_path=model_path).process_video_ffmpeg(polygons=polygons)
+                               model_path=model_path).process_video_opencv(polygons=polygons)
