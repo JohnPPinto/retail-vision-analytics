@@ -3,6 +3,7 @@ version: '3'
 services:
 
   frontend:
+    image: public.ecr.aws/y5x3q5t0/retail-vision-frontend
     build: frontend
     ports:
       - 8501:8501
@@ -12,6 +13,7 @@ services:
       - ./storage:/app/storage
   
   backend:
+    image: public.ecr.aws/y5x3q5t0/retail-vision-backend
     build: backend
     ports:
       - 8080:8080
