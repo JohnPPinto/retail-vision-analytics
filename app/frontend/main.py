@@ -17,6 +17,12 @@ st.title('Retail Vision Analytics')
 
 ##### Configuration - Page sidebar #####
 
+# Predefining some values for the polygons
+polygons = ''
+thickness = 4
+font_scale = 2
+font_thickness = 4
+
 with st.sidebar:
     st.header('Configuration:')
     
