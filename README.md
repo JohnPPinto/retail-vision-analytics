@@ -1,5 +1,30 @@
 July 14, 2023
 
+# Local Installation
+
+* Clone the repository
+```
+https://github.com/JohnPPinto/retail-vision-analytics.git
+```
+* Change the working directory
+```
+cd retail-vision-analytics/app
+```
+* Run the docker compose file (Docker and Docker compose should be installed)
+```
+docker compose up -d --build
+```
+* Or you can pull the docker images
+```
+docker compose pull
+docker compose up -d
+```
+* Navigate to the frontend and backend
+```
+http://localhost:8501
+http://localhost:8080/docs
+```
+
 # **Project Retail Vision Analytics**
 
 This project is a demonstration of my ability to work in the field of Deep Learning, showcase my skills to learn quickly, and develop and deploy end-to-end Artificial Intelligence technologies. Currently, this project is still in work in progress phase, project has completed the first stage and will be moving toward the continuous training (CT) stage, where I will be going back to the data pipeline and iterating improvements to all of the pipelines.
