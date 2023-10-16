@@ -53,7 +53,7 @@ Along with object detection, I also needed a way to track the object in the whol
 
 ## **Application Prototype**
 
-The frontend of the project is built using [Streamlit](https://streamlit.io/), for fast prototyping Streamlit is the best way to handle the frontend and to communicate with the backend I have used FastAPI, to generate a prediction on request by a user. The user can access the whole application as a web app, upload their videos, draw the polygon area for tracking and counting the customers, and visualize the result in a video format, all of this in a few clicks. I have also added Dockerfiles and docker-compose files for the project, this will make the whole process to deploy on the cloud simple and fast.
+The frontend of the project is built using [Streamlit](https://streamlit.io/), for fast prototyping Streamlit is the best way to handle the frontend and to communicate with the backend I have used [FastAPI](https://fastapi.tiangolo.com/), to generate a prediction on request by a user. The user can access the whole application as a web app, upload their videos, draw the polygon area for tracking and counting the customers, and visualize the result in a video format, all of this in a few clicks. I have also added Dockerfiles and docker-compose files for the project, this will make the whole process to deploy on the cloud simple and fast.
 
 ![home-screen](https://github.com/JohnPPinto/retail-vision-analytics/assets/66053973/f5f9f69f-456c-4058-bdb0-173946450149)
 <p align="center">Home Screen</p>
